@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { useEffect } from "react";
 
 function About() {
   return (
     <>
       <Navbar />
-      <div class="font-mono space-y-5 h-screen items-center flex flex-col mt-20">
+      <div class="font-mono space-y-5 items-center flex flex-col mt-20">
         <div id="mission">
           <div className="text-center">
             <h1 class="font-bold">What is our mission? </h1>

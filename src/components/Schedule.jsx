@@ -21,7 +21,7 @@ function Schedule() {
 
           <input
             type="text"
-            className="w-52 form-control text-sm border-black border-solid border-2 rounded-lg p-1"
+            className="placeholder:text-center w-52 form-control text-sm border-black border-solid border-2 rounded-lg p-1"
             id="firstNameInput"
             placeholder="ex: John"
           ></input>
@@ -31,7 +31,7 @@ function Schedule() {
 
           <input
             type="text"
-            className="w-52 form-control text-sm border-black border-solid border-2 rounded-lg p-1"
+            className="placeholder:text-center w-52 form-control text-sm border-black border-solid border-2 rounded-lg p-1"
             placeholder="ex: Doe"
           ></input>
           <label for="pickupAddress" className="form-label">
@@ -56,6 +56,10 @@ function Schedule() {
             <input className="" type="checkbox"></input>
             <label className="text-xs">Return to pick up address?</label>
           </div>
+          <label for="pickupDate">Pick-up Date</label>
+          <input type="text" placeholder="MM/DD/YYYY" className="w-52 form-control text-sm border-black border-solid border-2 rounded-lg p-1 placeholder:text-center"></input>
+          <label>Pick-up Time</label>
+          <input placeholder="HH:MM AM/PM" className="placeholder:text-center w-52 form-control text-sm border-black border-solid border-2 rounded-lg p-1"></input>
           <button
             className="bg-green-200 rounded border p-0.5"
             onClick={handleClick}
